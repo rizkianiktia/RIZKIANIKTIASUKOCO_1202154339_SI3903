@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.rizkianiktia.rizki_1202154339_modul2.DaftarMenu">
+
+    <ImageView
+        android:id="@+id/listGambar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ayam_bakar"/>
+    <TextView
+        android:id="@+id/listNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/listGambar"
+        android:paddingTop="15dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="Nasi ayam bakar"
+        />
+    <TextView
+        android:id="@+id/listHarga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listNama"
+        android:layout_toRightOf="@+id/listGambar"
+        android:text="Rp 45.000"
+        android:textSize="16dp"/>
+    <TextView
+        android:id="@+id/listId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listHarga"
+        android:layout_toRightOf="@id/listGambar"
+        android:visibility="invisible"
+        android:text="ID menu"/>
+    <View
+        android:layout_below="@+id/listGambar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="#FFC0C0C0"/>
+
+
+</RelativeLayout>

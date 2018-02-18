@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">RIZKI_1202154339_MODUL2</string>
+    <string-array name="meja">
+        <item>Meja 1</item>
+        <item>Meja 2</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

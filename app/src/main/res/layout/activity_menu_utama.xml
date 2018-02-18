@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rizkianiktia.rizki_1202154339_modul2.MenuUtama">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:src="@drawable/ead" />
+
+    <TextView
+        android:id="@+id/pilihmenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_toEndOf="@+id/pilihh"
+        android:layout_toRightOf="@+id/pilihh"
+        android:text="Pilih Menu:"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/pilihh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center">
+
+        <RadioButton
+            android:id="@+id/radioButton_dine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Dine In"
+            android:textSize="18sp"/>
+
+        <RadioButton
+            android:id="@+id/radioButton_takeaway"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Take Away"
+            android:textSize="18sp"
+           />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/pesan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pilihh"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/pilihh"
+        android:layout_toRightOf="@+id/pilihh"
+        android:text="Pesan sekarang"
+        android:onClick="pesan"/>
+
+</RelativeLayout>
